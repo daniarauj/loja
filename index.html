@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moletons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="max" alt="">
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">Loja<span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="98668.png" alt="">
+                </div>
+                <span id="cont-carrinho"></span>
+            </div>
+            <div id="carrinho-itens">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom nike cinza.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom nike
+                                Cor:Cinza
+                            </h3>
+                            <p>R$ 80,99</p>
+                            <button onclick="addCarrinho('Moletom Nike Cinza', 80.99)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom nike branco.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom Nike Cor: Branco</h3>
+                            <p>R$ 110.89</p>
+                            <button onclick="addCarrinho('Moletom Nike Branco', 110.89)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="moletom nike preto.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Moletom Nike Cor: Preto</h3>
+                            <p>R$ 90,79</p>
+                            <button onclick="addCarrinho('Moletom Nike Preto', 90.79)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="calça preta nike.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Calça Nike Cor: Preto</h3>
+                            <p>R$ 89,99</p>
+                            <button onclick="addCarrinho('Calça Nike Preta', 89.99)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="conjunto sal e pimenta.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Conjunto Sal e pimenta</h3>
+                            <p>R$ 110,00</p>
+                            <button onclick="addCarrinho('Conjunto Sal e Pimenta', 110.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="vestido brilhante.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Vestido Preto</h3>
+                            <p>R$ 85,00</p>
+                            <button onclick="addCarrinho('Vestido Preto', 85.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
